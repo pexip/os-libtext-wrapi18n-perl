@@ -1,3 +1,9 @@
+libtext-wrapi18n-perl (0.06-7pexip1) pexip; urgency=low
+
+  * Prepare Pexip packaging
+
+ -- John-Mark Bell <jmb@pexip.com>  Tue, 24 Dec 2013 22:01:55 +0000
+
 libtext-wrapi18n-perl (0.06-7) unstable; urgency=low
 
   * Fix infinite loop in Text::WrapI18N
