@@ -44,7 +44,7 @@ install: build
 	dh_testroot
 	dh_prep
 	dh_installdirs
-	$(MAKE) install PREFIX=`pwd`/debian/libtext-wrapi18n-perl/usr
+	$(MAKE) install DESTDIR=`pwd`/debian/libtext-wrapi18n-perl
 
 # Build architecture-independent files here.
 binary-arch: build install
