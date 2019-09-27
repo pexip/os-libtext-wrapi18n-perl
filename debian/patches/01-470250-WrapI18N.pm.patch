@@ -1,14 +1,14 @@
-http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=470250
-
-The infinite loop occurs in Text::WrapI18N when po4a tries to report an
-error in the PO files.
-
-I could reproduce the problem in WrapI18N::wrap() and I propose the
-attached patch to WrapI18N::wrap().  (A word should be placed on the
-next line if it fits on this line, but the leading header must be taken
-into account, thus $columns -> $columns - length $header)
-
-Nicolas François <nicolas.francois@centraliens.net>
+Description: The infinite loop occurs in Text::WrapI18N when po4a tries to report an error in the PO files.
+ I could reproduce the problem in WrapI18N::wrap() and I propose the
+ attached patch to WrapI18N::wrap().  (A word should be placed on the
+ next line if it fits on this line, but the leading header must be taken
+ into account, thus $columns -> $columns - length $header)
+Origin: vendor
+Bug-Debian: https://bugs.debian.org/470250
+Forwarded: unknown
+Author: Nicolas FranÃ§ois <nicolas.francois@centraliens.net>
+Reviewed-by: gregor herrmann <gregoa@debian.org>
+Last-Update: 2019-03-21
 
 --- a/WrapI18N.pm	2003-06-25 11:14:25.000000000 +0200
 +++ b/WrapI18N.pm	2008-03-13 02:04:02.628000837 +0100

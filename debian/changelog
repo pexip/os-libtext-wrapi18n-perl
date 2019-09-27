@@ -1,3 +1,38 @@
+libtext-wrapi18n-perl (0.06-9) unstable; urgency=medium
+
+  [ Sven Joachim ]
+  * debian/rules: Use "dh_perl -d" to avoid a dependency on perl
+    (Closes: #941232)
+
+ -- gregor herrmann <gregoa@debian.org>  Fri, 27 Sep 2019 14:53:06 +0200
+
+libtext-wrapi18n-perl (0.06-8) unstable; urgency=medium
+
+  * Take over for the Debian Perl Group; Closes: #925070 -- RFA/ITA
+  * debian/control: Added: Vcs-Git field (source stanza); Vcs-Browser
+    field (source stanza); ${misc:Depends} to Depends: field. Changed:
+    Homepage field changed to metacpan.org URL; Maintainer set to Debian
+    Perl Group <pkg-perl-maintainers@lists.alioth.debian.org> (was:
+    Anibal Monsalve Salazar <anibal@debian.org>).
+  * Mark package as autopkgtest-able.
+  * Drop version from perl build dependency.
+  * Switch to source format "3.0 (quilt)".
+  * Bump debhelper-compat to 12.
+  * Update debian/watch to uscan version 4 and MetaCPAN URL.
+  * debian/rules: use dh(1).
+  * debian/copyright: use Copyright-Format 1.0.
+  * Drop quilt remnants.
+  * Remove unneeded debian/dirs.
+  * Add DEP3 headers to 01-470250-WrapI18N.pm.patch.
+  * Update (build) dependencies.
+  * Add /me to Uploaders.
+  * Mention module name in long description.
+  * Remove trailing whitespace from debian/*.
+  * Annotate test-only build dependencies with <!nocheck>.
+  * Declare compliance with Debian Policy 4.4.0.
+
+ -- gregor herrmann <gregoa@debian.org>  Sun, 14 Jul 2019 16:45:33 -0300
+
 libtext-wrapi18n-perl (0.06-7.1) unstable; urgency=medium
 
   * Non-maintainer upload.
@@ -103,4 +138,3 @@ libtext-wrapi18n-perl (0.01-1) unstable; urgency=low
   * Initial Release.
 
  -- Tomohiro KUBOTA <kubota@debian.org>  Thu, 19 Jun 2003 22:09:55 +0900
-
