@@ -1,3 +1,13 @@
+libtext-wrapi18n-perl (0.06-10) unstable; urgency=medium
+
+  [ Debian Janitor ]
+  * Update standards version to 4.4.1, no changes needed.
+  * Update standards version to 4.5.0, no changes needed.
+  * Bump debhelper from old 12 to 13.
+  * Update standards version to 4.5.1, no changes needed.
+
+ -- Jelmer Vernooĳ <jelmer@debian.org>  Mon, 29 Aug 2022 20:05:44 +0100
+
 libtext-wrapi18n-perl (0.06-9) unstable; urgency=medium
 
   [ Sven Joachim ]
